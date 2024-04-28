@@ -1,0 +1,66 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Adding a fallback font */
+}
+
+header {
+    background-color: #0a0619; /* Darker violet */
+    color: #fff;
+    padding: 20px 40px; /* Add more padding for a traditional header appearance */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+h1.logo {
+    margin: 0;
+    padding: 0;
+    font-size: 24px; /* Adjust font size if necessary */
+    display: flex;
+    align-items: center; /* Center logo vertically */
+}
+
+.logo img {
+    width: 250px;
+    height: 70px; /* Set the height to maintain the same size */
+    margin-right: 10px; /* Add some space between logo and text */
+}
+
+nav {
+    margin-top: 20px;
+    display: flex; /* Display menu items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+nav a, .dropdown-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #110420; /* Darker violet */
+    margin: 0 10px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav a:hover, .dropdown-item:hover {
+    background-color: #110420; /* Darker shade on hover */
+}
+
+.dropdown-menu {
+    background-color: #110420; /* Darker violet */
+    display: none; /* Initially hide dropdown */
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-item {
+    display: block;
+    text-decoration: none;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Display dropdown on hover */
+}
