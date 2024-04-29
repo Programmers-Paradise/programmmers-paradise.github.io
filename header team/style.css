@@ -65,6 +65,7 @@ nav a:hover, .dropdown-item:hover {
     display: block; /* Display dropdown on hover */
 }
 
+/* footer */
 .footer-container{
     background-color:#0a0619 ;
     padding-bottom: 4rem;
