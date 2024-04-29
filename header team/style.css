@@ -46,7 +46,7 @@ nav a, .dropdown-item {
 }
 
 nav a:hover, .dropdown-item:hover {
-    background-color: #110420; /* Darker shade on hover */
+    background-color: #2f065e; /* Darker shade on hover */
 }
 
 .dropdown-menu {
