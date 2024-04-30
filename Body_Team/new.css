@@ -221,6 +221,10 @@ nav a:hover,
     margin-right: 10px;
 }
 /* Here are all the logos from our website. */
+.csvtu-logo{
+    width: 175px;
+    height: auto;
+}
 .linkedin-logo {
     width: 40px;
     height: auto;
