@@ -124,18 +124,23 @@ nav a:hover,
 
 .explore-button {
     padding: 10px 20px;
-    background-color: #2f065e;
+    background-color: #6b1aff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    
     margin-bottom: 20px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+.explore-button a {
+    color: white; /* Set the color to white */
+    text-decoration: none; /* Remove underline */
+}
 
 .explore-button:hover {
-    background-color: #6b1aff;
+    background-color: #2d1195;
 }
 
 .explore-button:active {
@@ -194,10 +199,16 @@ nav a:hover,
 .event-title {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 10px; 
+    text-align: center;
 }
 
 .event-details {
-    margin-top: 10px;
+    text-align: center;
+}
+.schedule-image{
+    width: 100%;
+    height: auto;
 }
 
 .image-container {
@@ -220,6 +231,15 @@ nav a:hover,
     vertical-align: middle;
     margin-right: 10px;
 }
+.schedule-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-link span {
+    margin-right: 10px;
+}
 /* Here are all the logos from our website. */
 .csvtu-logo{
     width: 175px;
@@ -231,6 +251,10 @@ nav a:hover,
 }
 
 .github-logo {
+    width: 40px;
+    height: auto;
+}
+.pdf-logo {
     width: 40px;
     height: auto;
 }
@@ -297,6 +321,18 @@ nav a:hover,
 .member h3 {
     margin-top: 0;
 }
+.member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 65%;
+}
+.member p {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
 
 @media screen and (max-width: 768px) {
     .event,
