@@ -402,3 +402,118 @@ nav a:hover,
         width: calc(100% - 40px);
     }
 }
+/* Additional CSS for Mobile Optimization */
+
+/* General */
+body {
+    font-size: 16px; /* Adjust font size for better readability */
+}
+
+/* Header */
+header {
+    padding: 15px 10px; /* Increase padding for better spacing */
+}
+
+h1.logo {
+    font-size: 20px; /* Reduce logo font size for better fit */
+}
+
+.logo img {
+    width: 200px; /* Adjust logo width for better fit */
+}
+
+nav {
+    margin-top: 10px; /* Reduce margin for better spacing */
+}
+
+nav a,
+.dropdown-item {
+    padding: 8px 16px; /* Adjust padding for better touch target */
+    font-size: 14px; /* Reduce font size for better fit */
+}
+
+/* Home Section */
+#home {
+    padding: 80px 10px; /* Adjust padding for better spacing */
+}
+
+.home-content {
+    max-width: 90%; /* Increase maximum width for better readability */
+}
+
+#home h2 {
+    font-size: 28px; /* Reduce font size for better fit */
+}
+
+#home p {
+    font-size: 16px; /* Reduce font size for better fit */
+}
+
+/* About Section */
+#about {
+    padding: 80px 10px; /* Adjust padding for better spacing */
+}
+
+#about h2 {
+    font-size: 28px; /* Reduce font size for better fit */
+}
+
+#about p {
+    font-size: 16px; /* Reduce font size for better fit */
+}
+
+.about-card {
+    max-width: 90%; /* Increase maximum width for better readability */
+}
+
+/* Event Section */
+.container {
+    padding: 20px 10px; /* Adjust padding for better spacing */
+}
+
+.event-card {
+    max-width: 90%; /* Increase maximum width for better readability */
+}
+
+.event-title {
+    font-size: 18px; /* Reduce font size for better fit */
+}
+
+/* Footer Section */
+.footer-container {
+    padding: 20px 10px; /* Adjust padding for better spacing */
+}
+
+.footer {
+    flex-direction: column; /* Align items in column for smaller screens */
+    align-items: center; /* Align items to center */
+}
+
+.footer-heading {
+    margin-right: 0; /* Remove margin for better spacing */
+}
+
+.footer-heading a {
+    margin-bottom: 1rem; /* Increase margin bottom for better spacing */
+}
+
+.footer-3,
+.footer-1 {
+    margin-bottom: 2rem; /* Increase margin bottom for better spacing */
+}
+
+.footer-3 a {
+    padding: 0.5rem; /* Adjust padding for better touch target */
+}
+
+/* Media Query for Tablets */
+@media screen and (max-width: 768px) {
+    .event,
+    .workshop {
+        width: calc(100% - 20px); /* Adjust width for better fit */
+    }
+
+    .member {
+        width: calc(100% - 20px); /* Adjust width for better fit */
+    }
+}
