@@ -99,7 +99,7 @@ header {
 }
 
 .about-box {
-    background: #393939;
+    background: rgba(0, 0, 0, 0.5);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -134,7 +134,7 @@ header {
 }
 
 .about-box:hover {
-    background: #ff00f2;
+    background: #212021;
     transform: translateY(-10px);
 }
 /*event section*/
@@ -143,7 +143,8 @@ header {
     text-align: center;
     color: white;
     padding: 50px 0;
-    background-image: url('Logos/background11.jpeg');
+    background: rgba(0, 0, 0, 0.5);
+    /* background-image: url('Logos/background11.jpeg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -193,6 +194,10 @@ header {
 .event-link:hover {
     background-color: #4f00b8; /* Darker purple background on hover */
 }
+.event-section:hover {
+    background: #212021;
+    transform: translateY(-10px);
+}
 
 
 /*gallery section*/
@@ -201,6 +206,7 @@ header {
     padding: 50px 0;
     text-align: center;
     color: #fff;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .section-title {
@@ -245,6 +251,10 @@ header {
 .event-images img:hover {
     transform: scale(1.05); /* Scale up the image on hover */
     border-color: #6b1aff; /* Change border color on hover */
+}
+.about-box:hover {
+    background: #212021;
+    transform: translateY(-10px);
 }
 
 .see-more,
@@ -340,6 +350,9 @@ header {
 
 .project-details a:hover {
     text-decoration: underline;
+}
+#projects:hover {
+     transform: translateY(-10px);
 }
 
 #see-more {
@@ -458,6 +471,7 @@ header {
     background-color: #b800a3; /* Dark purple color on hover */
 }
 
+
 .core-member img {
     width: 150px; /* Increase the size of the member image */
     height: 150px;
@@ -525,6 +539,7 @@ header {
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
+    color: #fff;
 }
 
 .blog-posts {
@@ -588,6 +603,7 @@ header {
 #contact {
     padding: 50px 0;
     text-align: center;
+    color: #fff;
     background-color: #060606; /* Light gray background color */
 }
 
@@ -631,5 +647,3 @@ header {
 .copyright i {
     color: #f9f8f8;
 }
-
-
