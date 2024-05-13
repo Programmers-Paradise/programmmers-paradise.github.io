@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Logos/background1.jpeg'); /* Replace 'background_image.jpg' with your image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            backdrop-filter: blur(8px); /* Apply blur effect to the background */
+            color: #fff; /* White text color */
+        }
+
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Album Box Styles */
+        .albums-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .album-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 300px; /* Adjust box width as needed */
+        }
+
+        .album-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .album-thumbnail img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .album-info {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .album-info h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .album-info p {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <section id="all-events" class="section">
+        <div class="container">
+            <h2 class="section-title">All Events</h2>
+            <div class="albums-container">
+                <!-- Event Box 1 -->
+                <div class="album-box" onclick="openEvent('Event1')">
+                    <div class="album-thumbnail">
+                        <img src="Event_Images/img1.jpeg" alt="Event 1 Thumbnail">
+                    </div>
+                    <div class="album-info">
+                        <h3>Event 1</h3>
+                        <p>Date: January 1, 2025</p>
+                    </div>
+                </div>
+                <!-- Add more event boxes -->
+                <!-- Event Box 2 -->
+                <div class="album-box" onclick="openEvent('Event2')">
+                    <div class="album-thumbnail">
+                        <img src="Event_Images/img1.jpeg" alt="Event 2 Thumbnail">
+                    </div>
+                    <div class="album-info">
+                        <h3>Event 2</h3>
+                        <p>Date: February 15, 2025</p>
+                    </div>
+                </div>
+                <!-- Event Box 3 -->
+                <div class="album-box" onclick="openEvent('Event3')">
+                    <div class="album-thumbnail">
+                        <img src="Event_Images/img1.jpeg" alt="Event 3 Thumbnail">
+                    </div>
+                    <div class="album-info">
+                        <h3>Event 3</h3>
+                        <p>Date: February 15, 2025</p>
+                    </div>
+                </div>
+                <!-- Event Box 4 -->
+                <div class="album-box" onclick="openEvent('Event4')">
+                    <div class="album-thumbnail">
+                        <img src="Event_Images/img1.jpeg" alt="Event 4 Thumbnail">
+                    </div>
+                    <div class="album-info">
+                        <h3>Event 4</h3>
+                        <p>Date: February 15, 2025</p>
+                    </div>
+                </div>
+                <!-- Event Box 5 -->
+                <div class="album-box" onclick="openEvent('Event5')">
+                    <div class="album-thumbnail">
+                        <img src="Event_Images/img1.jpeg" alt="Event 5 Thumbnail">
+                    </div>
+                    <div class="album-info">
+                        <h3>Event 5</h3>
+                        <p>Date: February 15, 2025</p>
+                    </div>
+                </div>
+                <!-- Event Box 6 -->
+                <div class="album-box" onclick="openEvent('Event6')">
+                    <div class="album-thumbnail">
+                        <img src="Event_Images/img1.jpeg" alt="Event 6 Thumbnail">
+                    </div>
+                    <div class="album-info">
+                        <h3>Event 6</h3>
+                        <p>Date: February 15, 2025</p>
+                    </div>
+                </div>
+                <!-- Repeat the pattern for other events -->
+            </div>
+        </div>
+    </section>
+    <script>
+        function openEvent(eventId) {
+            window.location.href = "event_" + eventId.toLowerCase() + ".html";
+        }
+    </script>
+</body>
+</html>
