@@ -1,0 +1,635 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Logos/background6.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #6b1aff;
+}
+
+/* Introduction Section Styles */
+#intro {
+    padding: 30px 0; /* Adjust padding as needed */
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    padding: 50px;
+    text-align: center;
+    color: #fff; /* Set text color to white */
+    border-radius: 10px; /* Add border radius */
+    transition: background 0.5s, transform 0.5s; /* Add transition */
+}
+
+.intro-container:hover {
+    background-color: #212021; /* Change background color on hover */
+    transform: translateY(-10px); /* Move up slightly on hover */
+}
+
+.intro-container .college-logo {
+    width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+.intro-content h2 {
+    font-size: 28px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease; /* Fade-in animation */
+}
+
+.intro-content p {
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 1.6;
+}
+
+/* About Us Section Styles */
+#about {
+    padding: 30px 0;
+}
+
+.about-box {
+    background: #393939;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    text-align: center; /* Align text to center */
+}
+
+.about-box i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.about-box h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fff; /* Set text color to white */
+}
+
+.about-box p {
+    color: #fff; /* Set text color to white */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-box a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.about-box:hover {
+    background: #ff00f2;
+    transform: translateY(-10px);
+}
+/*event section*/
+
+.events-section {
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    background-image: url('Logos/background11.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.events-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.event-card {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent gray background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    flex: 1;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    background-color: #4f00b8; /* Dark purple background on hover */
+}
+
+.event-card h3, .event-card p {
+    color: white; /* Text color white */
+}
+
+.event-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #6b1aff; /* Purple button color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event-link:hover {
+    background-color: #4f00b8; /* Darker purple background on hover */
+}
+
+
+/*gallery section*/
+
+#gallery {
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.event-section {
+    margin-bottom: 50px;
+}
+
+.event-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.event-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc; /* Light gray text color */
+}
+
+.event-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    margin-bottom: 20px;
+}
+
+.event-images img {
+    width: 300px; /* Adjust image width */
+    height: auto;
+    border-radius: 10px; /* Add border radius */
+    border: 2px solid #fff; /* Add white border */
+    transition: transform 0.3s ease;
+}
+
+.event-images img:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+    border-color: #6b1aff; /* Change border color on hover */
+}
+
+.see-more,
+.see-all {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6b1aff; /* Dark purple button color */
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.see-more:hover,
+.see-all:hover {
+    background-color: #4f00b8; /* Darker purple color on hover */
+}
+
+
+/* project section */
+#projects {
+    padding: 80px 0;
+    background-image: url('Logos/background12.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+#projects .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 300px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.project-details a {
+    color: #6b1aff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+#see-more {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6b1aff;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+#see-more:hover {
+    background-color: #4f00b8;
+}
+
+/* Club Mentors Section Styles */
+#mentors {
+    padding: 50px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+#mentors .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#mentors .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust the gap between mentor boxes */
+    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Limit the maximum width of the container */
+}
+
+.mentor-box {
+    width: 250px; /* Adjust the width of the mentor boxes */
+    height: 300px; /* Adjust the height of the mentor boxes */
+    background-color: #333; /* Dark gray background color for mentor boxes */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Glow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the glow effect */
+    text-align: center; /* Center-align the mentor box content */
+}
+
+.mentor-box:hover {
+    box-shadow: 0 0 40px #6b1aff; /* Dark purple glow effect on hover */
+}
+
+.mentor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the image round */
+    overflow: hidden; /* Ensure the image stays within the circle */
+    margin: 0 auto 20px; /* Center the image vertically and add bottom margin */
+}
+
+.mentor-image img {
+    width: 100%;
+    height: auto;
+}
+
+.mentor-details {
+    margin-top: auto; /* Push mentor details to the bottom */
+}
+
+.mentor-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mentor-position {
+    font-size: 16px;
+}
+
+/* Core Members Section Styles */
+#core-members {
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('Logos/background8.jpeg'); /* Replace 'background_image.jpg' with the URL of your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    color: #fff;
+}
+
+#core-members .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto 30px; /* Center the headline horizontally and add bottom margin */
+}
+
+.core-members-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between member boxes */
+}
+
+.core-member {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Adjust the width of the member box */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.core-member:hover {
+    background-color: #b800a3; /* Dark purple color on hover */
+}
+
+.core-member img {
+    width: 150px; /* Increase the size of the member image */
+    height: 150px;
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px;
+}
+
+.member-info {
+    margin-bottom: 20px;
+}
+
+.member-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.member-position {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.member-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.member-links a {
+    margin: 0 5px; /* Adjust spacing between icons */
+}
+
+.member-links img {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+}
+
+.all-members-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6b1aff; /* Dark purple button color */
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.all-members-button:hover {
+    background-color: #4f00b8; /* Darker purple color on hover */
+}
+
+/* Blog Section Styles */
+#blog {
+    padding: 50px 0;
+    background-image: url('Logos/background10.jpeg'); /* Replace 'background_image.jpg' with the URL of your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+}
+
+#blog .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Adjust the gap between blog posts */
+}
+
+.blog-post {
+    background-color: #fff; /* White background for each blog post */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow content */
+    max-width: 300px; /* Set maximum width for blog post */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.blog-post:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.blog-post img {
+    width: 100%; /* Make the image fill the container */
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Rounded corners for top */
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6b1aff; /* Dark purple button color */
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #4f00b8; /* Darker purple color on hover */
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #060606; /* Light gray background color */
+}
+
+#contact .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adjust the gap between icons */
+}
+
+.contact-icons a {
+    display: inline-block;
+}
+
+.contact-icons img {
+    width: 50px; /* Adjust the size of icons */
+    height: 50px;
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.contact-icons img:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+/*copyright*/
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-image: url('Logos/bottom_back1.jpg');
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i {
+    color: #f9f8f8;
+}
+
+

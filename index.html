@@ -1,844 +1,453 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programmers' Paradise</title>
-    <link rel="stylesheet" href="new.css">
-
+    <title>Coding Club</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1 class="logo">
-            <a href="#home">
-                    <img  src="Logos/logo1.jpg" alt="Logo">
-                </a>
-            <!-- <img src="Logos/logo1.jpg" alt="Logo"> -->
-        </h1>
-        <nav>
-            <a class="nav-link" href="#home">Home</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#events">Events</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
-                    aria-expanded="false">
-                    Members
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#Mentors">Our Mentors</a>
-                    <a class="dropdown-item" href="#core-members">Core Members</a>
-                    <a class="dropdown-item" href="#team-members">Team Members</a>
-                </div>
+
+<header>
+    <div class="logo">
+        <img src="Logos/logo1.jpg" alt="Logo">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#events" class="nav-link">Events</a></li>
+            <li><a href="#core-members" class="nav-link">Our Team</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="intro" class="section">
+    <div class="intro-container">
+        <img src="Logos/csvtu.png" alt="College Logo" class="college-logo">
+        <div class="intro-content">
+            <h2>Welcome to Programmer's Paradise</h2>
+            <p>Your gateway to the exciting world of coding and technology at CSVTU! Explore, learn, and innovate with us.</p>
+        </div>
+    </div>
+</section>
+
+<!-------about us ---->
+
+<div id="about">
+    <div class="container">
+        <div class="services-list">
+            <div class="about-box">
+                <i class="fa-solid fa-code"></i>
+                <h1>About Us</h1>
+                <p>Programmers' Paradise is more than just a coding club; it's a community dedicated to empowering students from all branches to elevate their coding skills and knowledge to new heights. Founded with the vision of fostering a culture of continuous learning and excellence, our goal is to establish ourselves as one of the premier coding clubs in India. We achieve this by organizing a wide range of events, including contests, workshops, and knowledge-sharing sessions, aimed at expanding the horizons of our members. What sets us apart is our unwavering commitment to support and collaboration. Through platforms like GitHub, we actively share resources and collaborate on projects, fostering a spirit of camaraderie and skill development. Additionally, we keep our members updated on new opportunities and industry trends through LinkedIn. At Programmers' Paradise, we believe that coding should be fun, and we strive to create an environment where learning is engaging, interactive, and enjoyable.</p>                
             </div>
-            <a class="nav-link" href="#blog">Blog</a>
-            <!-- <a class="nav-link" href="#contact">Contact Us</a> -->
-        </nav>
-    </header>
-
-    <!-- Home Sections -->
-    <section id="home" class="section">
-        <div class="home-content">
-            <h2>Welcome to Programmers' Paradise</h2>
-            <p>Your gateway to the exciting world of coding and technology at CSVTU! Explore, learn, and innovate with
-                us.</p>
-            <button class="explore-button">
-                <a href="https://github.com/Programmers-Paradise/Competitive-Programming-Resources"
-                    target="_blank">Explore!!</a>
-            </button>
-            <p><a href="http://csvtu.ac.in/" target="_blank">
-                    <img class="csvtu-logo" src="Logos/csvtu.png" alt="CSVTU">
-                </a></p>
-            <!-- <div class="social-logos">
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-                <a href="https://facebook.com/ProgrammrsParadise" target="_blank">
-                    <img class="facebook-logo" src="Logos/facebook.png" alt="FaceBook">
-                </a>
-                <a href="https://instagram.com/ProgramersParadise" target="_blank">
-                    <img class="instagram-logo" src="Logos/instagram.png" alt="Instagram">
-                </a>
-                <a href="https://youtube.com/ProgrammersParadise" target="_blank">
-                    <img class="youtube-logo" src="Logos/youtube.png" alt="YouTube">
-                </a>
-                <a href="https://discord.com/ProgrammersParadise" target="_blank">
-                    <img class="discord-logo" src="Logos/Discord.png" alt="Discord">
-                </a>
-            </div> -->
         </div>
-    </section>
+    </div>    
+</div>
 
-    <!-- About Sections -->
-
-    <section id="about" class="section">
-        <h2>About us</h2>
-        <div class="about-card">
-        <p>Programmers' Paradise is more than just a coding club; it's a community dedicated to empowering students from
-            all branches to elevate their coding skills and knowledge to new heights. Founded with the vision of
-            fostering a culture of continuous learning and excellence, our goal is to establish ourselves as one of the
-            premier coding clubs in India. We achieve this by organizing a wide range of events, including contests,
-            workshops, and knowledge-sharing sessions, aimed at expanding the horizons of our members. What sets us
-            apart is our unwavering commitment to support and collaboration. Through platforms like <a
-                href="https://github.com/Programmers-Paradise" target="_blank">GitHub</a>, we actively share resources
-            and collaborate on projects, fostering a spirit of camaraderie and skill development. Additionally, we keep
-            our members updated on new opportunities and industry trends through <a
-                href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">LinkedIn</a>. At
-            Programmers' Paradise, we believe that coding should be fun, and we strive to create an environment where
-            learning is engaging, interactive, and enjoyable.</p>
-        </div>
-    </section>
-
-    <!-- Event Sections -->
-
-    <section id="events" class="section">
-        <div class="container">
-            <h2>Events :</h2>
+<div id="events" class="events-section">
+    <div class="container">
+        <h1 class="section-title">Events</h1>
+        <div class="events-container">
             <div class="event-card">
-                <div class="event-title">
-                    <p>Check out our event schedule to stay updated on upcoming workshops, contests, and sessions. Dive into the world of coding and technology with our exciting lineup of events designed to enhance your skills and knowledge.</p>
-                    <div class="schedule-link">
-                        <span><a href="Schedule/Schedule.pdf" target="_blank" style="color: #fff;">Schedule</a>
-                             </span>
-                        <a href="Schedule/Schedule.pdf" target="_blank">
-                            <img class="pdf-logo" src="Logos/pdf.png" alt="Schedule">
-                        </a>
-                    </div>
-                </div>
+                <h3>AI WORKSHOP</h3>
+                <p>Some description of Event 1</p>
+                <a href="EVENT_1.html" class="event-link">View Details</a>
             </div>
-            
-            <!-- <div class="event-card">
-                <h3>Event Flier</h3>
-                <object class="pdf" 
-                    data="Schedule/Schedule.pdf"
-                    width="800"
-                    height="500">
-                </object>
-            </div> -->
-            <!-- Past Events -->
-            <h2>Past Events:</h2>
             <div class="event-card">
-                <div class="event-title">1. Workshop: Introduction to Competitive Programming - Dated(18th April)</div>
-                <div class="event-details">
-                    <p>Introduction to the basics of competitive programming.
-                        This session was held to encourage members to dive into the world of Competitive Programming
-                    </p>
-                    <img class="event-image" src="Event_Images/imgp1.jpg" alt="Workshop Image">
-                    <img class="event-image" src="Event_Images/imgp2.jpg" alt="Workshop Image">
-                    <img class="event-image" src="Event_Images/imgp3.jpg" alt="Workshop Image">
-                    <img class="event-image" src="Event_Images/imgp4.jpg" alt="Workshop Image">
-                    <img class="event-image" src="Event_Images/imgp5.jpg" alt="Workshop Image">
-                </div>
+                <h3>TED TALK</h3>
+                <p>Some description of Event 2</p>
+                <a href="EVENT_2.html" class="event-link">View Details</a>
             </div>
-
             <div class="event-card">
-                <div class="event-title">2. Competitive Programming Session - Dated(20th April)</div>
-                <div class="event-details">
-                    <p>A session focused on practicing competitive programming problems.</p>
-                    <div class="image-container">
-                        <div class="event-image"><img src="Event_Images/img1.jpeg" alt="Session Image"></div>
-                        <div class="event-image"><img src="Event_Images/img2.jpeg" alt="Session Image"></div>
-                        <div class="event-image"><img src="Event_Images/img3.jpeg" alt="Session Image"></div>
-                        <div class="event-image"><img src="Event_Images/img4.jpeg" alt="Session Image"></div>
-                        <div class="event-image"><img src="Event_Images/img5.jpeg" alt="Session Image"></div>
-                    </div>
+                <h3>UPCOMING EVENTS</h3>
+                <p>Some description of Event 3</p>
+                <a href="UPCOMING_EVENTS.html" class="event-link">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--gallery-->
+<section id="gallery" class="section">
+    <div class="container">
+        <h2 class="section-title">Gallery</h2>
+
+        <div class="event-section" id="event1">
+            <h3>Event 1</h3>
+            <div class="event-description">
+                <p>Description of Event 1 goes here.</p>
+            </div>
+            <div class="event-images">
+                <img src="Event_Images/img1.jpeg" alt="Event 1 Image 1">
+                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2">
+                <img src="Event_Images/img1.jpeg" alt="Event 1 Image 3">
+                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 4">
+            </div>
+            <a href="event1_gallery.html" class="see-more">See More</a>
+        </div>
+        
+        <div class="event-section" id="event2">
+            <h3>Event 2</h3>
+            <div class="event-description">
+                <p>Description of Event 2 goes here.</p>
+            </div>
+            <div class="event-images">
+                <img src="Event_Images/img3.jpeg" alt="Event 2 Image 1">
+                <img src="Event_Images/img4.jpeg" alt="Event 2 Image 2">
+                <img src="Event_Images/img3.jpeg" alt="Event 2 Image 3">
+                <img src="Event_Images/img4.jpeg" alt="Event 2 Image 4">
+            </div>
+            <a href="event2_gallery.html" class="see-more">See More</a>
+        </div>
+        
+        <!-- See All Events -->
+        <a href="all_events.html" class="see-all">All Events</a>
+
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        
+        <!-- Project Cards -->
+        <div class="project-container">
+            <div class="project-card">
+                <img src="Logos/project1.jpeg" alt="Project 1">
+                <div class="project-details">
+                    <h3>Project 1</h3>
+                    <p>A short description of Project 1.</p>
+                    <a href="https://github.com/project1" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="Logos/project1.jpeg" alt="Project 2">
+                <div class="project-details">
+                    <h3>Project 2</h3>
+                    <p>A short description of Project 2.</p>
+                    <a href="https://github.com/project2" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="Logos/project1.jpeg" alt="Project 3">
+                <div class="project-details">
+                    <h3>Project 3</h3>
+                    <p>A short description of Project 3.</p>
+                    <a href="https://github.com/project3" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!--Projects Sections -->
+        <!-- See More Button -->
+        <a href="projects.html" id="see-more">See More</a>
+    </div>
+</section>
 
-    <section id="projects" class="section transparent-box">
-        <h2>Projects</h2>
-        <p>Explore our latest projects...</p>
-    </section>
-
-    <!-- Team Sections -->
-    <!-- Mentors -->
-    <section id="Mentors" class="section">
-        <h2>Our Mentors</h2>
-        <div class="member-container">
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Dr. Nachiket Tapas</h3>
-                <p>Club I/C</p>
+<!-- Club Mentors Section -->
+<section id="mentors">
+    <h2 class="section-title">Club Mentors</h2> <!-- Heading for Club Mentors -->
+    <div class="container">
+        <div class="mentor-box">            <div class="mentor-image">
+                <img src="Logos/pp.jpeg" alt="Mentor 1">
             </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Dr. R.G Brajesh</h3>
-                <p>Club Faculty Advisors</p>
+            <div class="mentor-details">
+                <p class="mentor-name">John Doe</p>
+                <p class="mentor-position">Software Engineer</p>
             </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Mr. Abhinaw Jagtap</h3>
-                <p>Club Faculty Advisors</p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Mrs. Divya Shukla</h3>
-                <p>Club Faculty Advisors</p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Mr. Ramakant Ganjeshwar</h3>
-                <p>Club Faculty Advisors</p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Mrs. Basanti Minj</h3>
-                <p>Club Faculty Advisors</p>
-            </div>
-            <!-- Add more members as needed -->
-        </div>
-    </section>
-
-
-    <!-- Core members -->
-    <section id="core-members" class="section">
-        <h2>Core Members</h2>
-        <div class="member-container">
-            <div class="member">
-                <img class="member-image" src="members/abhinav_shukla.jpeg" alt="Member Image">
-                <h3>Abhinav Shukla</h3>
-                <p>President</p>
-                <p>
-                    <a href="https://in.linkedin.com/in/maxprogrammer007" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/maxprogrammer007" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Anoushka_Chatterjee.jpeg" alt="Member Image">
-                <h3>Anoushka Chatterjee</h3>
-                <p>Vice-President (Outreach and PR)</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/anoushka-chatterjee1" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/anoushkaacc" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Saurabh_Kumar.jpeg" alt="Member Image">
-                <h3>Saurabh Kumar</h3>
-                <p>Vice-President (Projects and Competitive Programming)</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/saurabh-kumar-8642262a0/" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/Ultron011" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/sharad.png" alt="Member Image">
-                <h3>Sharad Singh Thakur</h3>
-                <p>Vice-President (Programming and Workshops)</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/sharad-thakur-9b23142a2/" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/FreakyOne700" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Abhay_singh.png" alt="Member Image">
-                <h3>Abhay Singh Sisoodiya</h3>
-                <p>Core Member and Event Coordinator</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/abhay-singh-sisoodiya-859a63299/" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/Sisoodiya" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Arnav_Jha.png" alt="Member Image">
-                <h3>Arnav Jha</h3>
-                <p>Core Member and Event Coordinator</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/arnav-jha-496b26296" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/left01205" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Harsh_sharma.jpeg" alt="Member Image">
-                <h3>Harsh Sharma</h3>
-                <p>Core Member</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/harsh-sharma-a159a9292" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/swayamprogramator" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Jai_Keshav_Sharma.png" alt="Member Image">
-                <h3>Jai Keshav Sharma</h3>
-                <p>Core Member</p>
-                <p>
-                    <a href="www.linkedin.com/in/jai-keshav-sharma-1b014b307" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/Jai-Keshav-Sharma" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Moksh_Patel.jpeg" alt="Member Image">
-                <h3>Moksh Patel</h3>
-                <p>Core Member</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/moksh-patel-434aaa212" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/moksh5042" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Vinayak_Tiwari.png" alt="Member Image">
-                <h3>Vinayak Tiwari</h3>
-                <p>Core Member</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/vinayak-tiwari-4604b9281/" target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/vintiw6" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <!-- Add more core members if needed -->
-        </div>
-    </section>
-    <!-- Team members -->
-    <section id="team-members" class="section">
-        <h2>Team Members</h2>
-        <div class="member-container">
-
-            <div class="member">
-                <img class="member-image" src="members/Sanjay.png" alt="Member Image">
-                <h3>Sanjay Singh</h3>
-                <p>Member</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/sanjay-singh-b000a9304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/Sanjay8959" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Ayush_Dhruw.png" alt="Member Image">
-                <h3>Ayush Dhruw</h3>
-                <p>Member</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/ayush-dhruw?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/Dhruw08" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Prabhat_Singh.jpeg" alt="Member Image">
-                <h3>Prabhat Singh</h3>
-                <p>Member</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/prabhat-singh-3a4ab3303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://gitHub.com/Prabhat9801" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Rohit_Rana.jpeg" alt="Member Image">
-                <h3>Rohit Rana</h3>
-                <p>Member</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/rohit-rana-404782296/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        target="_blank">
-                        <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                    </a><br>
-                    <a href="https://github.com/geekrrr" target="_blank">
-                        <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                    </a>
-                </p>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Anandita Mukherjee</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Abhinav Anand</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Anuj Behra</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Arun Kumar</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Aryan Gupta</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Bhanu Pratap</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Dev Pratap Singh</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Dhiraj Kumar</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Hridyesh Kumar</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="members/Kishlay_Kumar.jpeg" alt="Member Image">
-                <h3>Kishlay Kumar</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/in/kishlay-kumar-29827a298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Kishlay671" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Karan Singh Rathore</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/in/karan-singh-rathore-3b44242a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/karansrabcd01" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Ketan Dinkar</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Kuldeep Lahare</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Lakshya Sori</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Mayank Kaushik</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Nukesh</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Peehu Agrawal</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Ravi Kesharwani</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Roshan Khatri</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Rupali Chandrakar</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Simankan Yadav</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Saurabh Prajapati</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Shravan</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Shreyansh Patel</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Swayam Singh</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Tilak Verma</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Gaurav Jaiswal</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Ashirwad Kumar</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Dileep Kushwaha</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Jonathan Philip</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Madhurima Rawat</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Rishabh Tiwari</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-            <div class="member">
-                <img class="member-image" src="Logos/pp.jpeg" alt="Member Image">
-                <h3>Bhavesh Kanoje</h3>
-                <p>Member</p>
-                <a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Programmers-Paradise" target="_blank">
-                    <img class="github-logo" src="Logos/github.jpeg" alt="GitHub">
-                </a>
-            </div>
-
-            <!-- Add more team members as needed -->
-
-
-        </div>
-    </section>
-
-    <!-- Blog section -->
-
-    <section id="blog" class="section">
-        <h2>Blog</h2>
-        <p>Read our latest articles...</p>
-    </section>
-
-    <!-- 1.Contact US section -->
-
-    <!-- <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <div class="contact-info">
-
-            <p><a href="https://www.linkedin.com/company/programmers-paradise-csvtu" target="_blank">
-                    <img class="linkedin-logo" src="Logos/Linkedin.png" alt="LinkedIn">
-                </a></p>
-            <p> <a href="mailto:programmersparadise@proton.me">
-                    <img class="Email-logo" src="Logos/Proton.webp" alt="Email">
-                </a></p>
-            <p><a href="http://csvtu.ac.in/" target="_blank">
-                    <img class="GMail-logo" src="Logos/mail.png" alt="College Email">
-                </a></p>
         </div>
 
-    </section> -->
-    
-    <!-- 2.Contact Us section -->
-    <!-- <section id="contact" class="section">
-        <div class="contact-info">
-            <div class="visme_d" data-title="Untitled Project" data-url="y40n19d4-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="62774"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+        <div class="mentor-box">
+            <div class="mentor-image">
+                <img src="Logos/pp.jpeg" alt="Mentor 2">
+            </div>
+            <div class="mentor-details">
+                <p class="mentor-name">Jane Smith</p>
+                <p class="mentor-position">Data Scientist</p>
+            </div>
         </div>
-    </section> -->
+
+        <div class="mentor-box">
+            <div class="mentor-image">
+                <img src="Logos/pp.jpeg" alt="Mentor 2">
+            </div>
+            <div class="mentor-details">
+                <p class="mentor-name">Jane Smith</p>
+                <p class="mentor-position">Data Scientist</p>
+            </div>
+        </div>
+
+        <div class="mentor-box">
+            <div class="mentor-image">
+                <img src="Logos/pp.jpeg" alt="Mentor 2">
+            </div>
+            <div class="mentor-details">
+                <p class="mentor-name">Jane Smith</p>
+                <p class="mentor-position">Data Scientist</p>
+            </div>
+        </div>
+
+        <div class="mentor-box">
+            <div class="mentor-image">
+                <img src="Logos/pp.jpeg" alt="Mentor 2">
+            </div>
+            <div class="mentor-details">
+                <p class="mentor-name">Jane Smith</p>
+                <p class="mentor-position">Data Scientist</p>
+            </div>
+        </div>
+
+        <div class="mentor-box">
+            <div class="mentor-image">
+                <img src="Logos/pp.jpeg" alt="Mentor 2">
+            </div>
+            <div class="mentor-details">
+                <p class="mentor-name">Jane Smith</p>
+                <p class="mentor-position">Data Scientist</p>
+            </div>
+        </div>
+
+        <!-- Repeat the above structure for each mentor -->
+        <!-- Add more mentor boxes as needed -->
+    </div>
+</section>
+
+<!-- Core Members Section -->
+<section id="core-members">
+    <h2 class="section-title">Core Members</h2>
+    <div class="core-members-container">
+        <!-- Member 1 -->
+        <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 1">
+            <div class="member-info">
+                <p class="member-name">John Doe</p>
+                <p class="member-position">Web Developer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+        <!-- Repeat the structure for other members -->
+        <!-- Member 2 -->
+        <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 2">
+            <div class="member-info">
+                <p class="member-name">Jane Smith</p>
+                <p class="member-position">Graphic Designer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+
+         <!-- Member 3 -->
+         <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 2">
+            <div class="member-info">
+                <p class="member-name">Jane Smith</p>
+                <p class="member-position">Graphic Designer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+
+         <!-- Member 4 -->
+         <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 2">
+            <div class="member-info">
+                <p class="member-name">Jane Smith</p>
+                <p class="member-position">Graphic Designer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+
+         <!-- Member 5 -->
+         <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 2">
+            <div class="member-info">
+                <p class="member-name">Jane Smith</p>
+                <p class="member-position">Graphic Designer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+
+         <!-- Member 6 -->
+         <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 2">
+            <div class="member-info">
+                <p class="member-name">Jane Smith</p>
+                <p class="member-position">Graphic Designer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+
+        
+         <!-- Member 7 -->
+         <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 2">
+            <div class="member-info">
+                <p class="member-name">Jane Smith</p>
+                <p class="member-position">Graphic Designer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+
+        
+         <!-- Member 8 -->
+         <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 2">
+            <div class="member-info">
+                <p class="member-name">Jane Smith</p>
+                <p class="member-position">Graphic Designer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+
+        
+         <!-- Member 9 -->
+         <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 2">
+            <div class="member-info">
+                <p class="member-name">Jane Smith</p>
+                <p class="member-position">Graphic Designer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+
+        
+         <!-- Member 10 -->
+         <div class="core-member">
+            <img src="Logos/pp.jpeg" alt="Member 2">
+            <div class="member-info">
+                <p class="member-name">Jane Smith</p>
+                <p class="member-position">Graphic Designer</p>
+            </div>
+            <div class="member-links">
+                <a href="#"><img src="Logos/Linkedin.png" alt="LinkedIn"></a> <!-- Replace "linkedin_icon.png" with the path to your LinkedIn icon image -->
+                <a href="#"><img src="Logos/github.jpeg" alt="GitHub"></a> <!-- Replace "github_icon.png" with the path to your GitHub icon image -->
+            </div>
+        </div>
+
+                <!-- Repeat for other members -->
+        
+    </div>
+
+    <a href="all-members.html" class="all-members-button">All Members</a>
+</section>
 
 
-    <!-- Footer -->
+<!--blog-->
 
-    <footer>
-        <div class = "footer-container" >
-            <div class="footer">
-                
-                <div class="footer-heading footer-1">
-                    <h2>Social Media</h2>
-                    <a href="https://www.linkedin.com/company/programmers-paradise-csvtu/" target="_blank">
-                        <img class = 'linkedin-logo' src="Logos/Linkedin.png" alt="Club LinkedIn">
-                    </a>
-                    </div>
-
-                <div class="footer-heading footer-2">
-                    <h2>About Us</h2>
-                    <a href="Vision"></a>
-                    <a href="#Mentors">Mentors</a>
-                    <a href="#core-members">Core Members</a>
-                    <a href="#team-members">Team Members</a>
+<section id="blog">
+    <div class="container">
+        <h2 class="section-title">Blog</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <img src="Logos/background2.jpeg" alt="Blog Post Image">
+                <div class="blog-content">
+                    <h3 class="blog-title">AI Won’t Replace Humans — But Humans With AI</h3>
+                    <p class="blog-description">Description of the blog post goes here. This is just a dummy text.</p>
+                    <a href="https://hbr.org/2023/08/ai-wont-replace-humans-but-humans-with-ai-will-replace-humans-without-ai" class="read-more">Read More</a>
                 </div>
-                
-                <div class="footer-3">
-                    <h2>Contact Us</h2>
-                    <a href="https://www.linkedin.com/company/programmers-paradise-csvtu"><img class="linkedin-logo" src="Logos/Linkedin.png" alt="Club LinkedIn"></a>
-                    <a href="mailto:programmersparadise@proton.me"><img class="Email-logo" src="Logos/Proton.webp" alt="Email"></a>
-                    
-                    
-                </div>
-                
             </div>
+            <div class="blog-post">
+                <img src="Logos/background2.jpeg" alt="Blog Post Image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Adding More Data Isn’t the Only Way to Improve AI</h3>
+                    <p class="blog-description">Description of the blog post goes here. This is just a dummy text.</p>
+                    <a href="https://hbr.org/2022/07/adding-more-data-isnt-the-only-way-to-improve-ai" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <img src="Logos/background2.jpeg" alt="Blog Post Image">
+                <div class="blog-content">
+                    <h3 class="blog-title">AI Should Augment Human Intelligence, Not Replace It</h3>
+                    <p class="blog-description">Description of the blog post goes here. This is just a dummy text.</p>
+                    <a href="https://hbr.org/2021/03/ai-should-augment-human-intelligence-not-replace-it" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <img src="Logos/background2.jpeg" alt="Blog Post Image">
+                <div class="blog-content">
+                    <h3 class="blog-title">When AI Becomes an Everyday Technology</h3>
+                    <p class="blog-description">Description of the blog post goes here. This is just a dummy text.</p>
+                    <a href="https://hbr.org/2019/06/when-ai-becomes-an-everyday-technology" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- More blog posts can be added here -->
         </div>
-    </footer>
+    </div>
+</section>
+
+<!--contact us-->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-icons">
+            <a href="mailto:youremail@example.com"><img src="Logos/mail.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/your-profile"><img src="Logos/Linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/yourusername"><img src="Logos/github.jpeg" alt="GitHub"></a>
+            <a href="https://instagram.com/yourusername"><img src="Logos/instagram.png" alt="instagram"></a>
+        </div>
+    </div>
+</section>
 
 
-    <!-- JavaScript for smooth scrolling -->
+<div class="copyright">
+    <p>Copyright © Programmer Paradise <i class="fa-solid fa-heart"></i> </p>
+</div>
 
-    <script src="new.js"></script>
+
+
+<script>
+    // Smooth scrolling for anchor links
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+
 </body>
-
 </html>

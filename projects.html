@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        /* Project Section Styles */
+        #projects {
+            padding: 80px 0;
+            background-image: url('Logos/background6.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            text-align: center;
+        }
+
+        #projects .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            width: 300px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .project-details {
+            padding: 20px;
+        }
+
+        .project-details h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .project-details p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .project-details a {
+            color: #6b1aff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Project Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            
+            <!-- Project Cards -->
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="Logos/project1.jpeg" alt="Project 1">
+                    <div class="project-details">
+                        <h3>Project 1</h3>
+                        <p>A short description of Project 1.</p>
+                        <a href="https://github.com/project1" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Logos/project1.jpeg" alt="Project 2">
+                    <div class="project-details">
+                        <h3>Project 2</h3>
+                        <p>A short description of Project 2.</p>
+                        <a href="https://github.com/project2" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Logos/project1.jpeg" alt="Project 3">
+                    <div class="project-details">
+                        <h3>Project 3</h3>
+                        <p>A short description of Project 3.</p>
+                        <a href="https://github.com/project3" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Logos/project1.jpeg" alt="Project 3">
+                    <div class="project-details">
+                        <h3>Project 4</h3>
+                        <p>A short description of Project 4.</p>
+                        <a href="https://github.com/project3" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Logos/project1.jpeg" alt="Project 3">
+                    <div class="project-details">
+                        <h3>Project 5</h3>
+                        <p>A short description of Project 5.</p>
+                        <a href="https://github.com/project3" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="Logos/project1.jpeg" alt="Project 3">
+                    <div class="project-details">
+                        <h3>Project 6</h3>
+                        <p>A short description of Project 6.</p>
+                        <a href="https://github.com/project3" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
