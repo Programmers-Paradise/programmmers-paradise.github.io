@@ -27,7 +27,21 @@
             font-weight: bold;
             margin-bottom: 30px;
         }
-
+        .section-text {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .event-card {
+            border: 2px solid #fff;
+            border-radius: 8px;
+            padding: 20px;
+            color: #fff;
+            width: 90%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
         .event-images {
             display: flex;
             justify-content: center;
@@ -70,6 +84,8 @@
             max-width: 700px;
             max-height: 80%;
             position: relative;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         .modal-content img {
@@ -110,21 +126,22 @@
 <body>
     <section>
         <div class="container">
-            <h2 class="section-title">Event 3 Images</h2>
+            <div class = "event-card">
+            <h2 class="section-title">Event 3 </h2>
+            
+            <h3 class="section-text">Workshop: MATLAB Day at CSVTU Computer Labs - Dated(8th May) </h3>
+            <h3><p>MATLAB Day at CSVTU Computer Labs: A Celebration of Learning and Innovation.
+            </p></h3>
             <div class="event-images">
-                <img src="Event_Images/img1.jpeg" alt="Event 1 Image 1" onclick="openModal('Event_Images/img1.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
-                <img src="Event_Images/img2.jpeg" alt="Event 1 Image 2" onclick="openModal('Event_Images/img2.jpeg')">
+                
+                <img src="Event_Images/matlab1.jpeg" alt="Event 3 Image 1" onclick="openModal('Event_Images/matlab1.jpeg')">
+                <img src="Event_Images/matlab2.jpeg" alt="Event 3 Image 2" onclick="openModal('Event_Images/matlab2.jpeg')">
+                <img src="Event_Images/matlab3.jpeg" alt="Event 3 Image 3" onclick="openModal('Event_Images/matlab3.jpeg')">
+                <img src="Event_Images/matlab4.jpeg" alt="Event 3 Image 4" onclick="openModal('Event_Images/matlab4.jpeg')">
+                <img src="Event_Images/matlab5.jpeg" alt="Event 3 Image 5" onclick="openModal('Event_Images/matlab5.jpeg')">
+                
                 <!-- Add more images as needed with onclick attribute -->
+            </div>
             </div>
         </div>
     </section>
@@ -138,7 +155,7 @@
     </div>
 
     <script>
-        var images = ['Event_Images/img1.jpeg', 'Event_Images/img2.jpeg']; // Add image URLs here
+        var images = ['Event_Images/matlab1.jpeg', 'Event_Images/matlab2.jpeg', 'Event_Images/matlab3.jpeg', 'Event_Images/matlab4.jpeg', 'Event_Images/matlab5.jpeg'];
         var currentImageIndex = 0;
 
         // JavaScript for opening and closing modal
