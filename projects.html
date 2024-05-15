@@ -5,69 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <style>
-        /* Project Section Styles */
-        #projects {
-            padding: 80px 0;
-            background-image: url('Logos/background6.jpeg');
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Logos/background3.jpeg');
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
+            background-attachment: fixed;
+            backdrop-filter: blur(8px);
             color: #fff;
+        }
+
+        .section {
+            padding: 50px 0;
             text-align: center;
         }
 
-        #projects .section-title {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 50px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Project Card Styles */
         .project-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 30px;
         }
 
         .project-card {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            margin: 20px;
             overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease;
             width: 300px;
+            text-decoration: none; /* Ensure text decoration is none for links */
+            color: inherit; /* Ensure the color remains unchanged */
         }
 
         .project-card:hover {
             transform: translateY(-5px);
+            background-color: rgba(0, 0, 0, 0.9);
         }
 
-        .project-card img {
+        .project-thumbnail img {
             width: 100%;
             height: auto;
             border-radius: 10px 10px 0 0;
             transition: transform 0.3s ease;
         }
 
-        .project-card:hover img {
+        .project-card:hover .project-thumbnail img {
             transform: scale(1.05);
         }
 
         .project-details {
             padding: 20px;
+            text-align: left;
         }
 
         .project-details h3 {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 10px;
-            color: #fff;
         }
 
         .project-details p {
             font-size: 16px;
             margin-bottom: 20px;
-            color: #ccc;
         }
 
         .project-details a {
@@ -82,79 +97,32 @@
     </style>
 </head>
 <body>
-    <!-- Project Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Projects</h2>
-            
-            <!-- Project Cards -->
             <div class="project-container">
-                <div class="project-card">
-                    <img src="Logos/project1.jpeg" alt="Project 1">
-                    <div class="project-details">
-                        <h3>Project 1</h3>
-                        <p>A short description of Project 1.</p>
-                        <a href="https://github.com/project1" target="_blank">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                <!-- Project Card 1 -->
+                <a href="https://github.com/Programmers-Paradise/programmmers-paradise.github.io/tree/main" target="_blank" class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="Logos/project1.jpeg" alt="Project 1 Thumbnail">
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="Logos/project1.jpeg" alt="Project 2">
+                    <div class="project-details">
+                        <h3>Our Website</h3>
+                        <p>Our first project was our Website.</p>
+                    </div>
+                </a>
+                <!-- Add more project cards as needed -->
+                <!-- Project Card 2 -->
+                <!-- <a href="https://github.com/link-to-project2" target="_blank" class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="Logos/project1.jpeg" alt="Project 2 Thumbnail">
+                    </div>
                     <div class="project-details">
                         <h3>Project 2</h3>
-                        <p>A short description of Project 2.</p>
-                        <a href="https://github.com/project2" target="_blank">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                        <p>Description of Project 2.</p>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="Logos/project1.jpeg" alt="Project 3">
-                    <div class="project-details">
-                        <h3>Project 3</h3>
-                        <p>A short description of Project 3.</p>
-                        <a href="https://github.com/project3" target="_blank">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="Logos/project1.jpeg" alt="Project 3">
-                    <div class="project-details">
-                        <h3>Project 4</h3>
-                        <p>A short description of Project 4.</p>
-                        <a href="https://github.com/project3" target="_blank">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="Logos/project1.jpeg" alt="Project 3">
-                    <div class="project-details">
-                        <h3>Project 5</h3>
-                        <p>A short description of Project 5.</p>
-                        <a href="https://github.com/project3" target="_blank">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="Logos/project1.jpeg" alt="Project 3">
-                    <div class="project-details">
-                        <h3>Project 6</h3>
-                        <p>A short description of Project 6.</p>
-                        <a href="https://github.com/project3" target="_blank">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-                <!-- Add more project cards as needed -->
+                </a> -->
+                <!-- Repeat the pattern for other projects -->
             </div>
         </div>
     </section>
