@@ -27,8 +27,7 @@ header {
 }
 
 .logo img {
-/*     width: 300px;
-    height: auto; */
+    
     width: 250px;
     height: 80px;
     margin-right: 10px;
@@ -44,10 +43,12 @@ header {
 .nav-link {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+   /*padding: 10px 20px;*/
+    padding: 10px 15px;
     border-radius: 5px;
     background-color: #333;
-    margin: 0 10px;
+    /*margin: 0 10px;*/
+    margin: 0 5px; 
     transition: background-color 0.3s ease;
 }
 
@@ -649,3 +650,83 @@ header {
 .copyright i {
     color: #f9f8f8;
 }
+  
+
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+   
+  
+
+    .logo img {
+        width: 100px; /* Reduce logo size */
+        padding: 15px;
+        height: auto;
+    }
+   
+    .nav-link{
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 30px;
+        text-align: left;
+        font-size: x-small;
+    }
+
+   
+    
+
+
+    .events-container {
+        flex-direction: column; /* Stack event cards vertically on small screens */
+    }
+
+    .intro-container {
+        padding: 20px;
+    }
+
+    .events-container {
+        flex-direction: column; /* Arrange event cards in a column */
+        align-items: center; /* Center-align event cards */
+    }
+
+    .event-card {
+        width: 80%; /* Adjust width to occupy most of the screen width */
+        margin-bottom: 20px; /* Add bottom margin for separation */
+    }
+
+    .event-images img {
+        width: 200px;
+    }
+
+    .project-card {
+        width: 200px;
+    }
+
+    .core-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .core-member{
+        width: 200px;
+        
+    }
+   .member-links{
+    margin-top: 0px;
+    position:relative;
+    top: 10px;
+   }
+    #mentors .container {
+        flex-wrap: wrap; /* Allow mentor boxes to wrap to the next line */
+        justify-content: center; /* Center-align mentor boxes */
+        gap: 20px; /* Adjust the gap between mentor boxes */
+    }
+
+    .mentor-box {
+        width: calc(50% - 20px); /* Make mentor boxes occupy half the width of the screen with some gap */
+        margin-bottom: 20px; /* Add bottom margin to separate mentor boxes */
+    }
+    
+}
+
+
