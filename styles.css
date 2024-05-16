@@ -705,17 +705,28 @@ header {
     .core-member img {
         width: 100px;
         height: 100px;
+        padding-bottom: 0%;
+        margin-bottom: 0px;
+        
+    }
+
+    #photo{
+        width:30px;
+        height: 30px;
+        
     }
 
     .core-member{
         width: 200px;
-        
+    
     }
-   .member-links{
-    margin-top: 0px;
-    position:relative;
-    top: 10px;
-   }
+    .member-name{
+        font-size: 15px;
+    }
+    .member-position{
+        font-size: 13px;
+    }
+   
     #mentors .container {
         flex-wrap: wrap; /* Allow mentor boxes to wrap to the next line */
         justify-content: center; /* Center-align mentor boxes */
@@ -728,5 +739,4 @@ header {
     }
     
 }
-
 
