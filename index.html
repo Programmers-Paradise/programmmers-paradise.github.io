@@ -39,6 +39,7 @@
             <li><a href="#blog" class="nav-link">Blog</a></li>
             <li><a href="#contact" class="nav-link">Contact Us</a></li>
         </ul>
+        <i class="fa-solid fa-xmark close-menu" onclick="closeMenu()"></i>
       </div>
 </header>
 
@@ -501,6 +502,9 @@
             });
         });
     });
+    function closeMenu() {
+    document.getElementById('burger').checked = false; // Uncheck the burger checkbox
+}
 </script>
 
 </body>
