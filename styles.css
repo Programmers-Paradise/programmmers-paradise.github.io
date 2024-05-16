@@ -654,7 +654,7 @@ header {
 
 
 /* Media query for screens smaller than 768px (typical mobile devices) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 836px) {
    
   
 
@@ -665,11 +665,8 @@ header {
     }
    
     .nav-link{
-        display: flex;
-        justify-content: space-evenly;
-        max-width: 30px;
-        text-align: left;
-        font-size: x-small;
+        display: none;
+        
     }
 
    
