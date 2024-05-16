@@ -19,6 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .logo {
@@ -86,6 +87,14 @@ header {
 /* Dropdown Menu */
 .dropdown {
     display: none;
+    position: absolute; /* Change from fixed to absolute */
+    top: 100%; /* Position it below the header */
+    right: 0; /* Align it to the right */
+    width: 35%;
+    background-color: #020202;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
@@ -123,6 +132,7 @@ header {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
     padding: 50px;
+    
     text-align: center;
     color: #fff; /* Set text color to white */
     border-radius: 10px; /* Add border radius */
@@ -735,8 +745,8 @@ header {
         cursor: pointer;
       }
       .dropdown {
-        display: none;
-        position: fixed; 
+        display: absolute;
+        position:absolute;
         top: 80px; /* Adjust the top position as needed */
         right: 0; 
         width: 35%; 
@@ -834,4 +844,3 @@ header {
     }
     
 }
-
