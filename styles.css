@@ -714,7 +714,7 @@ header {
   
 
     .logo img {
-        width: 100px; /* Reduce logo size */
+        width: 180px; /* Reduce logo size */
         padding: 15px;
         height: auto;
     }
