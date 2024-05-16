@@ -765,6 +765,7 @@ header {
     .dropdown ul li a {
         display: block;
         text-decoration: none;
+        text-align: center;
         color: #fff;
     }
     
