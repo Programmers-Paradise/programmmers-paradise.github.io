@@ -8,7 +8,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<div id="alertNotice" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>MEMBER SELECTION TEST NOTICE</h2>
+            <p>Dear students,</p>
+            <p>We are pleased to announce the Member Selection Test on 18th MAY 2024 for this semester.</p>
+            <ul>
+                <li>Total number of seats available: 80</li>
+                <li>Number of seats reserved for existing members: 38</li>
+                <li>Seats remaining for this intake: 42</li>
+            </ul>
+            <h3>Breakdown of seats:</h3>
+            <ul>
+                <li>12 seats allocated for 6th-semester students.</li>
+                <li>20 seats allocated for 4th-semester students.</li>
+                <li>10 seats allocated for 2nd-semester students.</li>
+            </ul>
+            <h3>Key points:</h3>
+            <ul>
+                <li>There will be different sets of questions tailored for each semester’s curriculum.</li>
+                <li>The leaderboard will be determined using the ICPC method.</li>
+                <li>Timing for the test: 5:00PM to 6:30PM.</li>
+                <li>It is mandatory for all participants to be part of the “Holidays with code” competition.</li>
+                <li>Results of the selection test will be announced the following day.</li>
+                <li>There will be NO further recruitment of new members this semester.</li>
+            </ul>
+        </div>
+    </div>
 <header>
     <div class="logo">
         <img src="Logos/logo4.png" alt="Logo">
@@ -505,6 +532,31 @@
     function closeMenu() {
     document.getElementById('burger').checked = false; // Uncheck the burger checkbox
 }
+    document.addEventListener("DOMContentLoaded", function() {
+    var alertNotice = document.getElementById("alertNotice");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    alertNotice.style.display = "block";
+
+    span.onclick = function() {
+        alertNotice.classList.add("fadeOut");
+        setTimeout(function() {
+            alertNotice.style.display = "none";
+            alertNotice.classList.remove("fadeOut");
+        }, 500); // Match this duration with the fadeOut animation duration
+    }
+
+    window.onclick = function(event) {
+        if (event.target == alertNotice) {
+            alertNotice.classList.add("fadeOut");
+            setTimeout(function() {
+                alertNotice.style.display = "none";
+                alertNotice.classList.remove("fadeOut");
+            }, 500); // Match this duration with the fadeOut animation duration
+        }
+    }
+});
 </script>
 
 </body>
