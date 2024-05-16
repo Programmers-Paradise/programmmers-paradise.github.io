@@ -739,7 +739,7 @@ header {
         position: fixed; 
         top: 80px; /* Adjust the top position as needed */
         right: 0; 
-        width: 30%; 
+        width: 35%; 
         background-color: #020202; 
         z-index: 1000; 
         padding: 10px 0; 
