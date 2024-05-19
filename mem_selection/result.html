@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility Result</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .message-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h2>Eligibility Result</h2>
+        <p id="message"></p>
+    </div>
+    <script>
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                status: params.get('status'),
+                name: params.get('name')
+            };
+        }
+
+        const { status, name } = getQueryParams();
+        const messageElement = document.getElementById('message');
+
+        if (status === 'success') {
+            messageElement.innerHTML = `Dear ${name},<br><br>
+                We are thrilled to inform you that you have been selected as a member of <em>Programmers' Paradise</em>! Your skills, enthusiasm, and dedication have truly shined through, and we can't wait to see the incredible contributions you will make to our community.<br><br>
+                Stay tuned for upcoming events, workshops, and opportunities to showcase your talents. Welcome aboard!<br><br>
+                Best regards,<br><em>Programmers' Paradise Team</em><br><br>
+                It is necessary to fill the given Google form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSes3wGxtBzslgXCUev9-pw36WW7eXJw7zEuHjnM1pjSkrE1bg/viewform?usp=sf_link" target="_blank">Google Form</a>`;
+        } else if (status === 'notEligible') {
+            messageElement.innerHTML = `Dear ${name},<br><br>
+
+We appreciate your interest and effort in applying for membership in <em>Programmers' Paradise</em>!. While we were impressed by your application, we regret to inform you that you were not selected this time.
+
+We encourage you to keep honing your skills and stay engaged with our community. There will be more opportunities in the future, and we hope to see your application again.
+
+<br><br>
+                Best regards,<br><em>Programmers' Paradise Team</em><br><br>`;
+            
+        } else if (status === 'wrongSemester') {
+            messageElement.innerHTML = `Sorry, ${name}. You are not eligible for the club due to your semester.`;
+            messageElement.style.color = 'red';
+        }
+    </script>
+</body>
+</html>
