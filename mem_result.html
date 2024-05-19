@@ -119,7 +119,8 @@ function checkEligibility() {
     const messageElement = document.getElementById('message');
 
     if (eligibleMembers.includes(name) && semester <= 6) {
-        messageElement.textContent = `Congratulations, ${name}! You are eligible for the club.`;
+        
+        messageElement.textContent = `Dear, ${name}!, We are thrilled to inform you that you have been selected as a member of Programmers' Paradise. Your skills, enthusiasm, and dedication have truly shined through, and we can't wait to see the incredible contributions you will make to our community.`;
         messageElement.style.color = 'green';
     } else if (!eligibleMembers.includes(name)) {
         messageElement.textContent = `Sorry, ${name}. You are not on the eligible members list.`;
