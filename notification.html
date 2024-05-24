@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
             background-image: url("logos/background9.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,12 +22,11 @@
         .container {
             width: 90%;
             max-width: 1200px;
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.9); /* Slight transparency for better readability */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            position: relative;
             padding: 20px;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -35,7 +37,8 @@
 
         .carousel {
             position: relative;
-            display: none; /* Initially hidden */
+            overflow: hidden;
+            margin-bottom: 20px;
         }
 
         .slides {
@@ -88,7 +91,7 @@
         .thumbnails {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         .thumbnail {
@@ -124,7 +127,6 @@
 
         .all-notifications {
             display: none;
-            margin-top: 20px;
         }
 
         .notification {
@@ -155,7 +157,6 @@
         }
 
         @media screen and (max-width: 768px) {
-           
             .container {
                 padding: 10px;
             }
@@ -183,14 +184,13 @@
         <div class="carousel">
             <div class="slides">
                 <div class="slide">
-                    <h2>Memeber Selection Test</h2>
-                    <p>10 May 2024->Member Selection Test will be held on 18th MAY 2024 for this semester.</p>
+                    <h2>Member Selection Test</h2>
+                    <p>10 May 2024 - Member Selection Test will be held on 18th MAY 2024 for this semester.</p>
                 </div>
                 <div class="slide">
-                    <h2>Memeber Selection Test</h2>
-                    <p>19 May 2024->Result Released</p>
+                    <h2>Member Selection Test</h2>
+                    <p>19 May 2024 - Result Released</p>
                 </div>
-                
                 <!-- Add more slides as needed -->
             </div>
             <div class="controls">
@@ -201,20 +201,18 @@
         <div class="thumbnails">
             <div class="thumbnail active" data-slide="0">1</div>
             <div class="thumbnail" data-slide="1">2</div>
-            <div class="thumbnail" data-slide="2">3</div>
             <!-- Add more thumbnails as needed -->
         </div>
         <button class="view-all-btn">View All Notifications</button>
         <div class="all-notifications">
             <div class="notification">
-                <h2>Memeber Selection Test</h2>
-                <p>10 May 2024->Member Selection Test will be held on 18th MAY 2024 for this semester.</p>
+                <h2>Member Selection Test</h2>
+                <p>10 May 2024 - Member Selection Test will be held on 18th MAY 2024 for this semester.</p>
             </div>
             <div class="notification">
-                <h2>Memeber Selection Test</h2>
-                    <p>19 May 2024->Result Released</p>
+                <h2>Member Selection Test</h2>
+                <p>19 May 2024 - Result Released</p>
             </div>
-            
             <!-- Add more notifications as needed -->
         </div>
     </div>
