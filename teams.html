@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmers Paradise - Teams</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Logos/background8.jpeg');
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .team {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .team:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .member {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .member:hover {
+            background-color:#8a8d8f;
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .team-members {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .team-members {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Teams</h1>
+        <div class="team">
+            <div class="team-header">
+                <h2>Team Alpha</h2>
+            </div>
+            <div class="team-members">
+                <!-- List all members for Team Alpha -->
+                <div class="member">Prerna Sakre</div>
+                <div class="member">Tripti Patel</div>
+                <div class="member">Hridyesh Kumar</div>
+                <div class="member">Siddardh Eslavath</div>
+                <div class="member">Kishlay Kumar</div>
+                <div class="member">Bhumika Shriwas</div>
+                <div class="member">Arun Kumar</div>
+                <div class="member">Mayank Kaushik</div>
+                <div class="member">Roshan G Raj</div>
+                <div class="member">Madhurima Rawat</div>
+                <div class="member">Ayush Dhruv</div>
+            </div>
+        </div>
+        <!-- Repeat for other teams -->
+        <div class="team">
+            <div class="team-header">
+                <h2>Team Beta</h2>
+            </div>
+            <div class="team-members">
+                <!-- List all members for Team Beta -->
+                <div class="member">Shreyansh Patel</div>
+                <div class="member">Shivani Kumari</div>
+                <div class="member">Priyanshu Tiwari</div>
+                <div class="member">Garima Sahu</div>
+                <div class="member">Ketan Dinkar</div>
+                <div class="member">Saurabh Prajapati</div>
+                <div class="member">Daneshwar Chandra</div>
+                <div class="member">Rishabh Rajput</div>
+                <div class="member">Roshan Khatri</div>
+                <div class="member">Faiz Ali</div>
+                <div class="member">Tilak Verma</div>
+            </div>
+        </div>
+        <!-- Repeat for Team Gamma -->
+        <div class="team">
+            <div class="team-header">
+                <h2>Team Gamma</h2>
+            </div>
+            <div class="team-members">
+                <!-- List all members for Team Gamma -->
+                <div class="member">Prabhat Singh</div>
+                <div class="member">Sachin Maurya</div>
+                <div class="member">Aryan Gupta</div>
+                <div class="member">Kuldeep Lahare</div>
+                <div class="member">Lakshya Sori</div>
+                <div class="member">Satyam Patel</div>
+                <div class="member">Aryan Kutty</div>
+                <div class="member">Swayam Singh</div>
+                <div class="member">Karan Singh Rathore</div>
+                <div class="member">Anmol Sharma</div>
+                <div class="member">Vikas Mishra</div>
+            </div>
+        </div>
+        <!-- Repeat for Team Delta -->
+        <div class="team">
+            <div class="team-header">
+                <h2>Team Delta</h2>
+            </div>
+            <div class="team-members">
+                <!-- List all members for Team Delta -->
+                <div class="member">Abhinav Ananda</div>
+                <div class="member">Riya</div>
+                <div class="member">Ashirwad Kumar</div>
+                <div class="member">Simankan yadav</div>
+                <div class="member">Satyam Jha</div>
+                <div class="member">Anuj Behra</div>
+                <div class="member">Sanjay Singh</div>
+                <div class="member">Ishita Bara</div>
+                <div class="member">Aditi Sahu</div>
+                <div class="member">Anandita Mukherjee</div>
+                <div class="member">Alka Dhakad</div>
+            </div>
+        </div>
+        <!-- Repeat for Team Epsilon -->
+        <div class="team">
+            <div class="team-header">
+                <h2>Team Epsilon</h2>
+            </div>
+            <div class="team-members">
+                <!-- List all members for Team Epsilon -->
+                <div class="member">Deepak Kumar</div>
+                <div class="member">Jonathan Philip</div>
+                <div class="member">Sammi Shahi</div>
+                <div class="member">Tanishq Sahu</div>
+                <div class="member">Shravan</div>
+                <div class="member">Shampy Thakur</div>
+                <div class="member">Bhanu Pratap</div>
+                <div class="member">Gaurav Jaiswal</div>
+                <div class="member">Tanu Garg</div>
+                <div class="member">Nukesh</div>
+                <div class="member">Dev Pratap Singh</div>
+            </div>
+        </div>
+        <!-- Repeat for Team Zeta -->
+        <div class="team">
+            <div class="team-header">
+                <h2>Team Zeta</h2>
+            </div>
+            <div class="team-members">
+                <!-- List all members for Team Zeta -->
+                <div class="member">Dhiraj Kumar</div>
+                <div class="member">Shivangi</div>
+                <div class="member">Rupali Chandrakar</div>
+                <div class="member">Raj Aryan</div>
+                <div class="member">Dileep Kushwaha</div>
+                <div class="member">Abhijeet Pandey</div>
+                <div class="member">Vidhirani Netam</div>
+                <div class="member">Priyanshu Mishra</div>
+                <div class="member">Sanya Ahmed</div>
+                <div class="member">Rishabh Tiwari</div>
+                <div class="member">Ravi Kesharwani</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url('Logos/background8.jpeg');
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .blog-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .blog-content {
+            padding: 15px;
+        }
+
+        .blog-title {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .blog-description {
+            font-size: 0.9em;
+            margin: 0 0 15px;
+            color: #666;
+        }
+
+        .blog-link {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px) {
+            .blog-container {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .blog-card {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="Logos/background2.jpeg" alt="Blog 1">
+            <div class="blog-content">
+                <h2 class="blog-title">Blog Title 1</h2>
+                <p class="blog-description">This is a brief description of Blog 1. It provides an overview of the content.</p>
+                <a href="blog1.html" class="blog-link">Read More</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="Logos/background2.jpeg" alt="Blog 2">
+            <div class="blog-content">
+                <h2 class="blog-title">Blog Title 2</h2>
+                <p class="blog-description">This is a brief description of Blog 2. It provides an overview of the content.</p>
+                <a href="blog2.html" class="blog-link">Read More</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="Logos/background2.jpeg" alt="Blog 3">
+            <div class="blog-content">
+                <h2 class="blog-title">Blog Title 3</h2>
+                <p class="blog-description">This is a brief description of Blog 3. It provides an overview of the content.</p>
+                <a href="blog3.html" class="blog-link">Read More</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="Logos/background2.jpeg" alt="Blog 4">
+            <div class="blog-content">
+                <h2 class="blog-title">Blog Title 4</h2>
+                <p class="blog-description">This is a brief description of Blog 4. It provides an overview of the content.</p>
+                <a href="blog4.html" class="blog-link">Read More</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="Logos/background2.jpeg" alt="Blog 5">
+            <div class="blog-content">
+                <h2 class="blog-title">Blog Title 5</h2>
+                <p class="blog-description">This is a brief description of Blog 5. It provides an overview of the content.</p>
+                <a href="blog5.html" class="blog-link">Read More</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <img src="Logos/background2.jpeg" alt="Blog 6">
+            <div class="blog-content">
+                <h2 class="blog-title">Blog Title 6</h2>
+                <p class="blog-description">This is a brief description of Blog 6. It provides an overview of the content.</p>
+                <a href="blog6.html" class="blog-link">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

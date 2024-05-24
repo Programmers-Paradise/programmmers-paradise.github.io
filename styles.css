@@ -700,7 +700,8 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
     border-radius: 10px;
     overflow: hidden; /* Hide overflow content */
-    max-width: 300px; /* Set maximum width for blog post */
+    max-width: 180px; /* Set maximum width for blog post */
+  
     transition: transform 0.3s ease; /* Add transition effect */
 }
 
@@ -730,7 +731,8 @@ header {
 }
 
 .read-more {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

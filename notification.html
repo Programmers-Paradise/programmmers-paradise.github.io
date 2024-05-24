@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmers Paradise - Notifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("logos/background4.jpeg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .carousel {
+            position: relative;
+            display: none; /* Initially hidden */
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .slide h2 {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            margin: 0;
+        }
+
+        .slide p {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 0 0 5px 5px;
+            margin: 0;
+        }
+
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .control-btn {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .control-btn:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .thumbnail {
+            width: 60px;
+            height: 60px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .thumbnail.active {
+            border: 2px solid #007bff;
+        }
+
+        .view-all-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .view-all-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .all-notifications {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .notification {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        .notification:hover {
+            transform: translateY(-10px);
+        }
+
+        .notification h2 {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .notification p {
+            padding: 10px;
+            margin: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .slide p,
+            .notification p {
+                padding: 15px;
+            }
+
+            .control-btn {
+                padding: 5px;
+            }
+
+            .thumbnail {
+                width: 40px;
+                height: 40px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Notifications</h1>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide">
+                    <h2>Memeber Selection Test</h2>
+                    <p>10 May 2024->Member Selection Test will be held on 18th MAY 2024 for this semester.</p>
+                </div>
+                <div class="slide">
+                    <h2>Memeber Selection Test</h2>
+                    <p>19 May 2024->Result Released</p>
+                </div>
+                
+                <!-- Add more slides as needed -->
+            </div>
+            <div class="controls">
+                <button class="control-btn prev">Prev</button>
+                <button class="control-btn next">Next</button>
+            </div>
+        </div>
+        <div class="thumbnails">
+            <div class="thumbnail active" data-slide="0">1</div>
+            <div class="thumbnail" data-slide="1">2</div>
+            <div class="thumbnail" data-slide="2">3</div>
+            <!-- Add more thumbnails as needed -->
+        </div>
+        <button class="view-all-btn">View All Notifications</button>
+        <div class="all-notifications">
+            <div class="notification">
+                <h2>Memeber Selection Test</h2>
+                <p>10 May 2024->Member Selection Test will be held on 18th MAY 2024 for this semester.</p>
+            </div>
+            <div class="notification">
+                <h2>Memeber Selection Test</h2>
+                    <p>19 May 2024->Result Released</p>
+            </div>
+            
+            <!-- Add more notifications as needed -->
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const viewAllBtn = document.querySelector('.view-all-btn');
+        const carousel = document.querySelector('.carousel');
+        const allNotifications = document.querySelector('.all-notifications');
+        let index = 0;
+
+        function showSlide(index) {
+            slides.style.transform = 'translateX(' + (-index * 100) + '%)';
+            thumbnails.forEach((thumbnail, i) => {
+                thumbnail.classList.toggle('active', i === index);
+            });
+        }
+
+        prev.addEventListener('click', () => {
+            index = (index > 0) ? index - 1 : slide.length - 1;
+            showSlide(index);
+        });
+
+        next.addEventListener('click', () => {
+            index = (index < slide.length - 1) ? index + 1 : 0;
+            showSlide(index);
+        });
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                index = parseInt(thumbnail.getAttribute('data-slide'));
+                showSlide(index);
+            });
+        });
+
+        // Auto-slide every 5 seconds
+        setInterval(() => {
+            next.click();
+        }, 5000);
+
+        // Show all notifications
+        viewAllBtn.addEventListener('click', () => {
+            carousel.style.display = 'none';
+            allNotifications.style.display = 'block';
+            viewAllBtn.style.display = 'none';
+        });
+
+        // Initial display
+        carousel.style.display = 'block';
+    </script>
+</body>
+</html>
