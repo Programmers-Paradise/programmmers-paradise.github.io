@@ -927,5 +927,10 @@ header {
         width: calc(50% - 20px); /* Make mentor boxes occupy half the width of the screen with some gap */
         margin-bottom: 20px; /* Add bottom margin to separate mentor boxes */
     }
+
+    .read-more{
+        display: flex;
+        justify-content: center;
+    }
     
 }
